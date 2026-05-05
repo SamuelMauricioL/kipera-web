@@ -5,6 +5,7 @@ const menuItems = [
   { name: 'Inicio', href: '#hero-container' },
   { name: 'Métodos', href: '#features' },
   { name: 'Onboarding', href: '#onboarding' },
+  { name: 'Widgets', href: '#widgets' },
   { name: 'Funciones', href: '#functions' },
   { name: 'Logros', href: '#achievements' },
 ];
