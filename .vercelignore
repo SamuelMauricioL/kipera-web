@@ -1,13 +1,12 @@
 node_modules/
 dist/
 build/
-coverage/
 .DS_Store
 *.log
 .env*
 !.env.example
 
-# Ignore all other projects in this workspace
+# Otros proyectos en el workspace
 Mobbin/
 ViraFaceWeb/
 app_mobile_piscilago_flutter/
@@ -39,5 +38,3 @@ tga_webs/
 the_game_app/
 the_game_app_workspace/
 trust_pay/
-.vercel
-.env*.local
