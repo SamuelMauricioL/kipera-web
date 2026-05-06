@@ -1,23 +1,16 @@
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Features from './components/Features';
-import OnboardingFlow from './components/OnboardingFlow';
-import WidgetShowcase from './components/WidgetShowcase';
-import AppFunctions from './components/AppFunctions';
-import Achievements from './components/Achievements';
-import Footer from './components/Footer';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import TermsPage from './pages/TermsPage';
+import PrivacyPage from './pages/PrivacyPage';
 
 export default function App() {
   return (
-    <main className="min-h-screen w-full bg-[#D9AE71] selection:bg-black selection:text-white">
-      <Navbar />
-      <Hero />
-      <Features />
-      <OnboardingFlow />
-      <WidgetShowcase />
-      <AppFunctions />
-      <Achievements />
-      <Footer />
-    </main>
+    <div className="min-h-screen w-full bg-[#D9AE71] selection:bg-black selection:text-white">
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/terms" element={<TermsPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
+      </Routes>
+    </div>
   );
 }
